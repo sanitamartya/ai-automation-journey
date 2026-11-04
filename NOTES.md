@@ -66,3 +66,35 @@
 - Working with APIs that need auth (API keys)
 - `.env` for secrets management
 - Small project: Weather + GitHub combined dashboard
+
+---
+
+# Day 3 — 2025-11-05
+
+## ✅ What I Completed
+
+- File handling (read/write text and JSON files)
+- Learned about `.env` files and `python-dotenv` for secrets management
+- Generated GitHub Personal Access Token (PAT)
+- Made first authenticated API call (`auth_api.py`)
+- Checked rate limits (60 -> 5000 requests/hour)
+- Updated `.gitignore` to secure the `.env` file
+
+## 🧠 What I Learned
+
+- **File Handling:** Use `with open(...) as f:` so files close automatically. Use `json.dump()` and `json.load()` for JSON files.
+- **Secrets Management:** Never hardcode API keys. Put them in `.env` and load with `python-dotenv`.
+- **`.env` vs `.env.example`:** `.env` holds real secrets (ignored by git). `.env.example` is a template (committed to git).
+- **Auth Headers:** Use `headers={"Authorization": f"Bearer {token}"}` to make authenticated API requests.
+- **Rate Limits:** Unauthenticated GitHub API allows 60 req/hr. Authenticated allows 5000 req/hr.
+- **Security:** Always add `.env` to `.gitignore` BEFORE adding real secrets to it.
+
+## ❓ Questions / Confusions
+
+- (Add here if any)
+
+## 🎯 Tomorrow's Focus
+
+- Building a multi-API project (Weather + GitHub dashboard)
+- Environment variables in real projects
+- Structuring a slightly larger Python script
