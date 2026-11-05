@@ -98,3 +98,31 @@
 - Building a multi-API project (Weather + GitHub dashboard)
 - Environment variables in real projects
 - Structuring a slightly larger Python script
+
+---
+
+# Day 4 — 2025-11-06
+
+## ✅ What I Completed
+
+- Explored Open-Meteo Weather API (Geocoding + Forecast)
+- Built `get_coordinates()` and `get_weather()` functions
+- Built `get_github_info()` function with token-based auth
+- Integrated multiple APIs (Weather + GitHub) into `dashboard.py`
+- Displayed data in a clean, structured terminal dashboard
+
+## 🧠 What I Learned
+
+- **Multi-API Flow:** Output of one function (`coords`) can be the input of another function (`get_weather`).
+- **Geocoding API:** Converts city names into latitude/longitude.
+- **Graceful Degradation:** Check if `.env` token exists before using headers. If not, fallback to unauthenticated API so the app doesn't crash.
+- **Dashboard Structuring:** Grouping API outputs into logical sections with formatting (`=` \* 45) makes CLI output readable.
+
+## ❓ Questions / Confusions
+
+- (Add here if any)
+
+## 🎯 Tomorrow's Focus
+
+- Building a CLI Tool using `argparse` or `sys.argv` (taking city name from the terminal)
+- Introduction to `FastAPI` (Turning our dashboard into a real web API)
