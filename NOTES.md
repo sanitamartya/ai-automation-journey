@@ -126,3 +126,23 @@
 
 - Building a CLI Tool using `argparse` or `sys.argv` (taking city name from the terminal)
 - Introduction to `FastAPI` (Turning our dashboard into a real web API)
+
+---
+
+# Day 5 — 2025-11-07
+
+## ✅ What I Completed
+
+- Learned and implemented CLI arguments using `sys.argv` (`cli_dashboard.py`)
+- Installed `fastapi` and `uvicorn`
+- Created first Web API server (`main.py`)
+- Added `/`, `/health`, and `/weather` endpoints
+- Understood Query Parameters (e.g., `?city=Mumbai`)
+
+## 🧠 What I Learned
+
+- **CLI Args:** `sys.argv` lets scripts take terminal inputs dynamically.
+- **FastAPI:** Express.js equivalent for Python. It makes creating endpoints super easy.
+- **Uvicorn:** The server that runs the FastAPI app (`uvicorn main:app --reload`).
+- **Query Params:** Passing data via URL (`?city=Delhi`) and catching it in function arguments.
+- **Auto Docs:** FastAPI automatically creates interactive documentation at `/docs`.
